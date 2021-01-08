@@ -1,0 +1,58 @@
+version: "3.8"
+services: 
+ nginx1:
+    build: .
+    restart: always
+    volumes: 
+      - ./repository:/etc/nginx/html/hmg
+      - ./certs:/etc/nginx/ssl
+    container_name: "nginx1"
+    networks:
+        - "neo"
+ nginx2:
+    build: .
+    restart: always
+    volumes: 
+      - ./repository:/etc/nginx/html/hmg
+      - ./certs:/etc/nginx/ssl
+    container_name: "nginx2"
+    networks:
+        - "neo"
+ nginx3:
+    build: .
+    restart: always
+    volumes:
+     - ./repository:/etc/nginx/html/hmg
+     - ./certs:/etc/nginx/ssl
+    container_name: "nginx3"
+    networks:
+        - "neo"
+ nodejs:
+    build: ./nodejs
+    restart: always
+    ports:
+      - 3800:3800
+    volumes:
+     - ./repository:/etc/nginx/html/hmg
+    container_name: "nodejs"
+    networks:
+        - "neo"
+
+ nginx-ha:
+    build: ./nginx_HA/
+    ports: 
+      - 80:80
+      - 443:443
+    volumes:
+     - ./certs:/etc/nginx/ssl
+    container_name: "nginx-haproxy"
+    restart: always
+    networks:
+        - "neo"
+ 
+volumes: 
+  certs:
+  repository:
+networks: 
+   neo:
+
