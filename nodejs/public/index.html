@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Framework VirtuolPro</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="jetfiles/default.css">
+</head>
+<body>
+
+	<header class="ui container fluid">
+		<div class="ui container">
+			<div class="ui grid equal width column stackable middle aligned">
+				<div class="ui row">
+					<div class="column six wide">
+						<a href="/" class="img-logo">
+							<img src="assets/logo.png" />
+						</a>            
+					</div>
+					<div class="column seven wide"><jet-search data-class-container="ui input action" data-class-input="" data-class-button="ui button"></jet-search></div>
+					<div class="column three wide">
+						<div class="jet-cart">
+							<i class="icon shopping bag big"></i>
+							<span class="ui orange circular label">2</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="ui container fluid" id="jet-menu-container">
+		<div class="ui container">
+			<jet-menu></jet-menu>
+		</div>      
+	</div>
+	<div class="ui divider hidden"></div>
+	<div class="ui container fluid">
+		<div class="ui container">
+			<div class="ui grid four column doubling unstackable">
+				<jet-showcase data-qtd="8" data-class-container="ui grid four column stackable doubling relaxed" data-class-children="four column" data-buy="Adicionar ao Carrinho"></jet-showcase>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ui container fluid">
+		<div class="ui container">
+			<div class="ui grid four column doubling unstackable">
+				<jet-group data-qtd="8" data-class-container="ui grid four column stackable doubling relaxed" data-class-children="four column" data-buy="Adicionar ao Carrinho"></jet-group>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="ui divider hidden"></div>
+	<jet-footer></jet-footer>
+
+	<script type="text/javascript" src="jetfiles/jet-virtuol-home.min.js"></script>
+</body>
+</html>

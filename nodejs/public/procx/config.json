@@ -1,0 +1,82 @@
+{
+    "Config": {
+      "IdEmpresa": 1000108,
+      "NomeEmpresa": "Jet",
+      "StaticUrl": "static-loja.plataformaneo.com.br",
+      "ProdutosPorCor": true
+    },
+    "MicroService": [
+      {
+        "MicroServices": "produto",
+        "UserName": "produto",
+        "Password": "produtoCorp",
+        "Url": "http://produto-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "pedido",
+        "UserName": "pedido",
+        "Password": "pedidoCorp",
+        "Url": "http://pedido-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "cliente",
+        "UserName": "cliente",
+        "Password": "clientecorp",
+        "Url": "http://cliente-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "checkout",
+        "UserName": "checkout",
+        "Password": "checkoutcorp",
+        "Url": "http://checkout-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "redesocial",
+        "UserName": "cliente",
+        "Password": "clientecorp",
+        "Url": "http://redesocial-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "pagamento",
+        "UserName": "produto",
+        "Password": "produtoCorp",
+        "Url": "http://pagamento-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "sessao",
+        "UserName": "sessao",
+        "Password": "sessaocorp",
+        "Url": "http://sessao-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "empresa",
+        "UserName": "empresa",
+        "Password": "empresacorp",
+        "Url": "http://empresa-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "antifraude",
+        "UserName": "forceline_antifraude",
+        "Password": "antfrfl2@17",
+        "Url": "http://antifraude-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "hubfrete",
+        "UserName": "frameworkneo_hubfrete",
+        "Password": "hubfrefram2@18",
+        "Url": "http://hubfrete-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "vendaassistida",
+        "UserName": "frameworkneov2_vendaassistida",
+        "Password": "Vendaassisfram2@197E4EC428",
+        "Url": "http://vendaassistida-neo1.plataformaneo.com.br"
+      },
+      {
+        "MicroServices": "excecao",
+        "UserName": "produto",
+        "Password": "produtoCorp",
+        "Url": "http://excecao-neo1.plataformaneo.com.br"
+      }
+    ]
+}

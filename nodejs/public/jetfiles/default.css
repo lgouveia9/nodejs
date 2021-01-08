@@ -1,0 +1,232 @@
+/* You can add global styles to this file, and also import other style files */
+ :root {
+	/*colors*/
+	 --primaryColor: #181818;
+	 --secondaryColor: #058d9b;
+	 --terciaryColor: #5a5a5a;
+	 --actionColor: #1ea355;
+	 --lightGray: #f7f7f7;
+	 --gray: #dcdcdc;
+	/*font size*/
+	 --font-sm: 14px;
+	 --font-md: 16px;
+	 --font-lg: 20px;
+	 --font-xl: 25px;
+	/*margin*/
+	 --space-sm: 0.5rem;
+	 --space-md: 1rem;
+	 --space-lg: 2rem;
+	 --space-xl: 3rem;
+}
+ .ui.grid {
+	 margin-top: 0;
+	 margin-bottom: 0;
+}
+ .img-logo {
+	 margin: var(--space-md) 0;
+	 display: block;
+}
+ .jet-busca {
+	 margin: var(--space-md) 0;
+}
+ .jet-cart {
+	 position: relative;
+	 text-align: right;
+}
+ .jet-cart .icon {
+	 margin-right: 0;
+}
+ #jet-menu-container {
+	 background-color: var(--primaryColor);
+}
+ #jet-menu-container #jet-menu {
+	 display: flex;
+	 justify-content: space-between;
+	 list-style: none;
+	 margin: 0 auto;
+	 padding: 0;
+}
+ @media only screen and (max-width: 767px) {
+	 #jet-menu-container #jet-menu {
+		 flex-direction: column;
+	}
+}
+ #jet-menu-container #jet-menu li {
+	 display: inline-block;
+	 padding-top: var(--space-lg);
+	 padding-bottom: var(--space-lg);
+}
+ #jet-menu-container #jet-menu li a {
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-weight: bold;
+	 padding-left: var(--space-lg);
+	 padding-right: var(--space-lg);
+}
+ #jet-menu-container #jet-menu li a:hover {
+	 color: var(--secondaryColor);
+}
+ #jet-menu-container #jet-menu li .submenu {
+	 display: none;
+}
+ #jet-menu-container #jet-menu li:hover .submenu {
+	 display: block;
+	 position: absolute;
+	 z-index: 1;
+	 background-color: #fff;
+	 left: 0;
+	 width: 100%;
+	 padding: 2rem;
+	 margin-top: 2rem;
+	 border-bottom: 1px solid #ddd;
+}
+ #jet-menu-container #jet-menu li:hover .submenu a {
+	 color: var(--primaryColor);
+	 font-weight: normal;
+	 text-transform: none;
+	 font-size: var(--font-md);
+}
+ #jet-menu-container #jet-menu li:hover .submenu a:hover {
+	 color: var(--primaryColor);
+	 text-decoration: underline;
+}
+ .jet-listagem .jet-produto {
+	 display: flex;
+	 align-items: flex-end;
+	 height: 100%;
+	 margin-bottom: var(--space-md);
+}
+ .jet-listagem .jet-produto img {
+	 max-width: 100%;
+}
+ .jet-listagem .jet-produto .info {
+	 margin-top: var(--space-md);
+	 margin-bottom: var(--space-md);
+	 display: flex;
+	 flex-direction: column;
+}
+ .jet-listagem .jet-produto .info .info-nome {
+	 margin-top: var(--space-sm);
+	 font-size: var(--font-md);
+	 color: var(--primaryColor);
+	 min-height: 40px;
+}
+ .jet-listagem .jet-produto .info .info-valores .preco-de {
+	 margin-right: var(--space-sm);
+	 color: var(--terciaryColor);
+	 font-size: var(--font-sm);
+	 text-decoration: line-through;
+}
+ .jet-listagem .jet-produto .info .info-valores .preco-por {
+	 color: var(--secondaryColor);
+	 font-size: var(--font-md);
+	 font-weight: 700;
+}
+ .jet-listagem .jet-produto .info .info-parcelamento {
+	 color: var(--terciaryColor);
+	 font-size: var(--terciaryColor);
+}
+ .jet-listagem .jet-produto .info .info-parcelamento .valor {
+	 color: var(--terciaryColor);
+	 font-weight: 700;
+}
+ .jet-listagem .jet-produto .comprar {
+	 background-color: var(--secondaryColor);
+	 color: #fff;
+	 padding: var(--space-md);
+	 border-radius: var(--space-sm);
+	 display: block;
+	 text-align: center;
+	 text-transform: uppercase;
+	 font-size: var(--font-sm);
+	 font-weight: 500;
+}
+ .jet-image-product .image-full img {
+	 margin: 0 auto;
+	 max-width: 100%;
+	 display: block;
+}
+ .jet-image-product #multifotos {
+	 margin-top: var(--space-lg);
+}
+ .jet-image-product #multifotos img {
+	 margin: 0 auto;
+	 max-width: 100%;
+	 display: block;
+}
+ .jet-info .nomeProduto {
+	 margin-bottom: var(--space-md);
+	 display: block;
+}
+ .jet-info .preco-de {
+	 display: inline-block;
+	 margin-right: var(--space-sm);
+	 color: var(--terciaryColor);
+	 text-decoration: line-through;
+	 font-size: var(--font-md);
+}
+ .jet-info .preco-por {
+	 font-weight: bold;
+	 margin-top: var(--space-md);
+	 display: inline-block;
+	 font-size: var(--font-lg);
+}
+ .jet-info .parcelamento {
+	 display: block;
+	 color: var(--secondaryColor);
+}
+ .jet-info .parcelamento .parcelamento-valor {
+	 font-weight: bold;
+}
+ .jet-info .rate {
+	 margin-top: var(--space-md);
+}
+ .jet-info .rate span {
+	 display: inline-block;
+	 opacity: 1;
+	 margin: 0 0.25rem 0 0;
+	 width: 1.18em;
+	 height: 1em;
+	 font-family: Icons;
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 1em;
+	 text-decoration: inherit;
+	 text-align: center;
+	 color: var(--gray);
+}
+ .jet-info .rate span.star:before {
+	 content: "\f005";
+}
+ .jet-info .rate span.star.active {
+	 color: #c9e00d;
+}
+ .jet-info #btn-buy {
+	 background-color: var(--actionColor);
+	 color: #fff;
+	 padding: var(--space-md);
+	 border-radius: var(--space-sm);
+	 display: block;
+	 text-align: center;
+	 text-transform: uppercase;
+	 font-size: var(--font-md);
+	 font-weight: 500;
+	 margin-top: var(--space-lg);
+}
+ footer {
+	 background-color: var(--lightGray);
+	 padding-top: var(--space-lg);
+	 padding-bottom: var(--space-lg);
+	 margin-top: var(--space-lg);
+}
+ footer a {
+	 color: var(--primaryColor);
+}
+ footer a:hover {
+	 color: var(--primaryColor);
+	 text-decoration: underline;
+}
+ #subfooter * {
+	 text-align: center;
+	 font-size: var(--font-sm);
+}
