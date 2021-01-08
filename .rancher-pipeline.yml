@@ -2,7 +2,7 @@ stages:
 - name: Build
   steps:
   - runScriptConfig:
-      image: golang:1.11
+      image: node:latest
       shellScript: |-
         mkdir -p /go/src/github.com/rancher
         ln -s `pwd` /go/src/github.com/rancher/pipeline-example-go
@@ -19,3 +19,4 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
+notification: {}
